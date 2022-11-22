@@ -1,0 +1,30 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.radio-button__description,
+.symbol__title {
+  line-height: 21.82px;
+}
+
+.symbol__title {
+  margin-bottom: 8px;
+}
+
+.radio-button__label {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.symbol {
+  height: 98px;
+}
+
+@media (max-width: 709px) {
+  .symbol {
+    justify-content: flex-start;
+    height: 128px;
+  }
+
+}

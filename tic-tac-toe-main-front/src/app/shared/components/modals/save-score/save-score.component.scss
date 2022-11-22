@@ -1,0 +1,47 @@
+.save_score{
+
+  @media (max-width:709px) {
+    width: 346px;
+    height: 173px;
+    padding: 16px;
+  }
+
+  .title{
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: normal;
+    margin-bottom: 8px;
+  }
+
+  .message{
+    @media (max-width:709px) {
+      text-align: start;
+    }
+  }
+
+  .link{
+    width: 112px;
+    height: 38px;
+  }
+
+  .modal_buttons{
+    margin-top: 24px;
+    @media (max-width:709px) {
+      justify-content: flex-start;
+    }
+  }
+
+  .primary-link{
+    @media (max-width:709px) {
+      width: 70px;
+      margin-left: 12px;
+    }
+  }
+}
+
+.primary-link,
+.leave-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

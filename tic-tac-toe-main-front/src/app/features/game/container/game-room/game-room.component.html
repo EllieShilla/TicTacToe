@@ -1,0 +1,13 @@
+<div class="page__wrapper">
+  <router-outlet></router-outlet>
+
+  <app-quiz></app-quiz>
+  <app-rules></app-rules>
+  <app-up-button
+    *ngIf="(fixedButtonVisibleHeight | fixedButtonVisibility | async)
+     && (fixedButtonVisibleWidth | checkViewportWidth | async)"
+    class="fixed-btn"
+    (upScreen)="onUpBtn()"
+  ></app-up-button>
+</div>
+

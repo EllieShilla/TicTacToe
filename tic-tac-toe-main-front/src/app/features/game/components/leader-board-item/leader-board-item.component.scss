@@ -1,0 +1,48 @@
+@import "src/assets/styles/variables";
+
+.leader-board-item {
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 24px;
+    background-color: $light-cell-color;
+  }
+
+  &__place {
+    width: 30px;
+    margin-right: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+  }
+
+  &__avatar {
+    margin-right: 24px;
+  }
+}
+
+.points {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+
+    & > span {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__image {
+    position: relative;
+    top: 5px;
+  }
+}
+
+.invite-button {
+  padding: 8px;
+}

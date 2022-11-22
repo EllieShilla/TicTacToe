@@ -1,0 +1,23 @@
+{
+  "profiles": {
+    "SpaceGame.UserService.API": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "BucketName": "bucketavatar",
+        "UserPoolClientId": "7erpo0ic6pmmeia918fd1gm741",
+        "UserPoolClientSecret": "g269t65f00r00b7cg2rfd5i4j957cesngndce6f0hbckaub4776",
+        "UserPoolId": "eu-west-3_oHJgFj6Vc",
+        "Region": "eu-west-3",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:44389;http://localhost:59270"
+    },
+    "Mock Lambda Test Tool": {
+      "commandName": "Executable",
+      "commandLineArgs": "--port 5050",
+      "workingDirectory": ".\\bin\\$(Configuration)\\net6.0",
+      "executablePath": "%USERPROFILE%\\.dotnet\\tools\\dotnet-lambda-test-tool-6.0.exe"
+    }
+  }
+}

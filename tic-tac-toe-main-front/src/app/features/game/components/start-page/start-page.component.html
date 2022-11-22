@@ -1,0 +1,21 @@
+<div class="page__wrapper">
+  <h1 class="page__title">Welcome to Tic Tac Toe</h1>
+  <div class="game-field__wrapper">
+    <app-game-field class="game-field" [gameField$]="gameField$"></app-game-field>
+    <div class="game-field__overlay">
+      <a
+        (click)="onPlayWithRobot()"
+        class="game-field__overlay--link link secondary-link"
+        [routerLink]="['/', routerLinks.gameRoom,routerLinks.botConfrontation]"
+      >
+        Play with robot
+      </a>
+      <a class="game-field__overlay--link link secondary-link">
+        Play with random player
+      </a>
+      <a class="game-field__overlay--link link secondary-link">
+        Play with friend
+      </a>
+    </div>
+  </div>
+</div>

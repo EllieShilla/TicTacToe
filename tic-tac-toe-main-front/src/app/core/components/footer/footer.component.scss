@@ -1,0 +1,50 @@
+@import "../../../../assets/styles/variables";
+
+.footer {
+  &__wrapper {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content--wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 303px;
+    padding: 32px 0;
+  }
+
+  &__description {
+    font-size: 10px;
+  }
+
+  &__link {
+    font-size: 12px;
+    &--wrapper {
+      margin: 0;
+    }
+  }
+
+  &__link,
+  &__description {
+    color: $footer-description;
+  }
+}
+
+.logo {
+  width: 20px;
+
+  &__wrapper {
+    margin-bottom: 18px;
+  }
+}
+
+.social-icon__wrapper {
+  margin-bottom: 10px;
+}
+
+.social__link {
+  &:not(:last-child) {
+    margin-right: 9px;
+  }
+}

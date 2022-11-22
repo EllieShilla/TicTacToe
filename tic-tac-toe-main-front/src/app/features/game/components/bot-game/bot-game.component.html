@@ -1,0 +1,24 @@
+<div class="game-room__wrapper">
+  <app-back-btn [title]="buttonName.backToHome" [className]="'to-game__link'" [link]="linkForBackButton"></app-back-btn>
+
+  <div class="game-section__wrapper">
+    <div class="info__wrapper">
+      <app-statistic></app-statistic>
+      <app-complexity></app-complexity>
+      <app-symbol (changeSymbol)="onPreferredSymbol($event)"></app-symbol>
+    </div>
+
+    <div class="game-field__wrapper">
+      <app-game-field [gameField$]="gameField$" [playerSymbol$]="playerSymbol$" (playersMove)="onCellHandler($event)">
+      </app-game-field>
+      <div class="overlay__wrapper" *ngIf="isEndGame$ | async">
+        <app-game-field-overlay
+          [playerRole]="playerRole"
+          [gameResult$]="gameResult$"
+          (playAgain)="onPlayAgain()"
+        ></app-game-field-overlay>
+      </div>
+    </div>
+
+  </div>
+</div>

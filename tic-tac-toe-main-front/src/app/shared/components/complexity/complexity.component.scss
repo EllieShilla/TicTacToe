@@ -1,0 +1,30 @@
+.complexity{
+    &__wrapper {
+      padding: 8px;
+      height: 128px;
+    }
+
+    &__label{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__radio {
+      margin-right: 4px;
+      cursor: pointer;
+
+      &--description {
+        line-height: 21.82px;
+      }
+    }
+
+  &__title {
+    margin-bottom: 11px;
+    line-height: 21.82px;
+  }
+}

@@ -1,0 +1,8 @@
+<section class="page__wrapper">
+  <div class="container">
+    <app-nav></app-nav>
+    <router-outlet></router-outlet>
+  </div>
+  <app-footer></app-footer>
+</section>
+<app-loader *ngIf="isLoaderVisible$ | async"></app-loader>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "TvyEcKjxU7oLsSCzT4kdE+jxqLJMp/xjGlPASHnxQKYe0ZRBmhpjrIoiuOezQDB5qdAMdGzV1saexjht/erIrA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\38098\\Downloads\\Telegram Desktop\\Новая папка\\tictac\\SpaceGame.Storage.S3\\SpaceGame.Storage.S3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\38098\\.nuget\\packages\\awssdk.core\\3.7.13.4\\awssdk.core.3.7.13.4.nupkg.sha512",
+    "C:\\Users\\38098\\.nuget\\packages\\awssdk.s3\\3.7.9.53\\awssdk.s3.3.7.9.53.nupkg.sha512",
+    "C:\\Users\\38098\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

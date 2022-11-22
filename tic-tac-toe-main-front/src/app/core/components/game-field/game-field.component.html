@@ -1,0 +1,8 @@
+<div class="game-table__wrapper">
+  <span *ngFor="let cell of gameField$ | async">
+    <app-game-cell class="cell" [cell]="cell" [playerSymbol$]="playerSymbol$!" (playerMove)="onCellHandler($event)">
+    </app-game-cell>
+  </span>
+  <img class="win-line" src="../../../../assets/img/win-line.svg" [ngClass]="horizontalLine$ | async">
+  <img class="win-line" src="../../../../assets/img/win-diagonal.svg" [ngClass]="diagonalLine$ | async">
+</div>

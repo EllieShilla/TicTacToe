@@ -1,0 +1,39 @@
+.game-section__wrapper,
+.info__wrapper {
+  display: flex;
+}
+
+.info__wrapper {
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 17px;
+}
+
+.game-room__wrapper {
+  padding-bottom: 39px;
+}
+
+@media (max-width: 709px) {
+  .game-section__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
+
+.game-field__wrapper {
+  position: relative;
+}
+
+.overlay__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

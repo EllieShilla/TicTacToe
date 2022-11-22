@@ -1,0 +1,75 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SpaceGame.Storage.S3/1.0.0": {
+        "dependencies": {
+          "AWSSDK.S3": "3.7.9.53",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "SpaceGame.Storage.S3.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.13.4": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.13.4"
+          }
+        }
+      },
+      "AWSSDK.S3/3.7.9.53": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.13.4"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.9.53"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SpaceGame.Storage.S3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AWSSDK.Core/3.7.13.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aYrLHov6J6di5zFY3hxGSubsm955f1/YjwC2djl8sRY39puB3lNm7H8zbbpvch+TmLRHBmjLNI4tfL7siwzfAQ==",
+      "path": "awssdk.core/3.7.13.4",
+      "hashPath": "awssdk.core.3.7.13.4.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.9.53": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W0UG/Xq+5WA1eLGHl6fwvdpyRNXsLPP6rSBoJP3tlTckH2LZOlPQ9u5SONpcx2L2bA+RHFFv2V28gsatEwaGRg==",
+      "path": "awssdk.s3/3.7.9.53",
+      "hashPath": "awssdk.s3.3.7.9.53.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    }
+  }
+}

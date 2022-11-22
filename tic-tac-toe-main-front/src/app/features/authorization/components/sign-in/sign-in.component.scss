@@ -1,0 +1,32 @@
+@import "../../../../../assets/styles/variables";
+
+.signIn__button {
+  padding: 8px 152px;
+}
+
+.forgot__link {
+  color: $link-color;
+  font-size: 14px;
+
+  &--wrapper {
+    padding-top: 6px;
+    margin-bottom: 22px;
+    text-align: right;
+  }
+}
+
+.additional-question {
+  margin-right: 16px;
+  color: $primary-color;
+  font-size: 14px;
+
+  &__link {
+    color: $link-color;
+    font-size: 14px;
+  }
+
+  &__wrapper {
+    margin-bottom: 520px;
+    text-align: center;
+  }
+}

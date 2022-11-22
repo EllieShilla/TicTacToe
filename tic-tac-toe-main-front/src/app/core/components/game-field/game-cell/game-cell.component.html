@@ -1,0 +1,8 @@
+<div class="cell__wrapper" (click)="onCellClickHandler()">
+  <img
+    *ngIf="cell.sign"
+    [attr.src]="cell.sign | setCellIcon: (playerSymbol$ | async)!"
+    alt="game cell"
+    class="cell"
+  >
+</div>

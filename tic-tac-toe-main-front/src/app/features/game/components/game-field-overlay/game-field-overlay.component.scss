@@ -1,0 +1,20 @@
+.game-overlay__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 344px;
+  height: 348px;
+  padding-top: 17px;
+  background: linear-gradient(180deg, rgba(49, 50, 83, 0.5) 0%, rgba(49, 50, 83, 0) 84.77%);
+}
+
+.secondary-link {
+  padding: 8px 12px;
+}
+
+.game-result__title {
+  margin-right: 34px;
+  color: white;
+  font-weight: 800;
+  font-size: 24px;
+  font-family: 'Nunito';
+}

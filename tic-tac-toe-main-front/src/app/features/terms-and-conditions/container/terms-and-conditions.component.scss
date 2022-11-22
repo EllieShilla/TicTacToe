@@ -1,0 +1,23 @@
+@import "../../../../assets/styles/variables";
+
+.terms__content{
+  margin-bottom: 32px;
+}
+
+.description__list {
+  padding-left: 17px;
+  list-style: disc;
+
+  &--item {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.page__wrapper {
+  position: relative;
+}

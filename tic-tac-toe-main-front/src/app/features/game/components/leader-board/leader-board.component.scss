@@ -1,0 +1,15 @@
+@import "src/assets/styles/variables";
+
+.your-rating {
+
+  &__wrapper {
+    margin-bottom: 32px;
+    padding-bottom: 39px;
+    border-bottom: 1px solid $light-grey-border;
+  }
+}
+
+.leader-bord__title,
+.your-rating__title {
+  margin-bottom: 16px;
+}

@@ -1,0 +1,55 @@
+@import "../../../../../assets/styles/variables";
+
+.condition-checkbox {
+  margin-right: 4px;
+
+  &__wrapper {
+    display: flex;
+    align-self: flex-start;
+    margin-bottom: 24px;
+  }
+
+  &__label {
+    display: flex;
+    margin-right: 4px;
+  }
+}
+
+.accept-checkbox,
+.condition__link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.condition__link {
+  color: $link-color;
+}
+
+.signUp__button {
+  padding: 8px 148px;
+}
+
+.registration-form {
+  padding-bottom: 32px;
+}
+
+.additional-question,
+.additional-question__link {
+  font-size: 14px;
+}
+
+.additional-question {
+  margin-right: 16px;
+  color: $primary-color;
+
+  &__wrapper {
+    width: 100%;
+    margin-bottom: 394px;
+    text-align: center;
+  }
+
+  &__link {
+    color: $link-color;
+  }
+}

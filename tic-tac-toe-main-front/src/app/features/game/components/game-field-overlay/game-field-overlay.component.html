@@ -1,0 +1,6 @@
+<div class="game-overlay__wrapper">
+  <div class="game-result__title">{{(gameResult$ | async)! | gameResult: playerRole}}</div>
+  <div class="button__wrapper">
+    <button class="link secondary-link" (click)="playAgainHandler()">Play again</button>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+@import "../../../../../assets/styles/variables.scss";
+
+.sign_in{
+  height: 168px;
+  font-size: 20px;
+  font-weight: 700;
+
+  .primary-link{
+    width: 158px;
+    height: 38px;
+    text-align: center;
+
+    .sign_in-btn,
+    .sign_up-btn{
+      width: 100%;
+      font-size: 14px;
+      color: white;
+    }
+  }
+}

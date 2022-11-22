@@ -1,0 +1,14 @@
+﻿global using global::Amazon;
+global using global::Amazon.AspNetCore.Identity.Cognito.Extensions;
+global using global::Amazon.CognitoIdentityProvider;
+global using global::Microsoft.AspNetCore.Authentication.JwtBearer;
+global using global::Microsoft.AspNetCore.Authorization;
+global using global::Microsoft.IdentityModel.Tokens;
+global using global::Newtonsoft.Json;
+global using global::Microsoft.AspNetCore.Mvc;
+global using global::Microsoft.AspNetCore.Mvc.Filters;
+global using global::System.IdentityModel.Tokens.Jwt;
+global using global::Amazon.AspNetCore.Identity.Cognito;
+global using global::Amazon.Extensions.CognitoAuthentication;
+global using global::Microsoft.AspNetCore.Identity;
+global using global:: Amazon.DynamoDBv2.Model;

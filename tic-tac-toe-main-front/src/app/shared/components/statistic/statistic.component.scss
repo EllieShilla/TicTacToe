@@ -1,0 +1,63 @@
+@import "src/assets/styles/variables";
+
+.score__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: $light-cell-color;
+  border-radius: 4px;
+  width: 163px;
+  height: 98px;
+  padding: 8px;
+}
+
+.leaderBoard.score__wrapper {
+  flex-direction: row;
+  align-items: center;
+  width: 343px;
+  height: 66px;
+  padding: 12px 8px 8px 8px;
+}
+
+.trophy:before {
+  content: url('../../../../assets/img/trophy.svg');
+}
+
+.handshake:before {
+  content: url('../../../../assets/img/handshake.svg');
+}
+
+.handshake:before,
+.trophy:before {
+  padding-right: 9px;
+}
+
+.score__item {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 700;
+  color: $primary-color;
+}
+
+@media (max-width:709px) {
+  .score__item {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+
+    &:not(:last-child) {
+      margin-right: 19px;
+    }
+  }
+
+  .score__wrapper {
+    flex-direction: row;
+    align-items: center;
+    width: 343px;
+    height: 66px;
+    padding: 12px 8px 8px 8px;
+    margin-bottom: 24px;
+  }
+}

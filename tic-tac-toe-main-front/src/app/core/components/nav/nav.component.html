@@ -1,0 +1,39 @@
+<nav class="nav">
+  <div class="logo__wrapper">
+    <img src="../../../../assets/img/cross.svg" alt="cross" class="logo">
+    <img src="../../../../assets/img/ellipse.svg" alt="ellipse" class="logo">
+  </div>
+
+  <div class="leader-board__link--wrapper">
+    <a class="play__link" [routerLink]="routerLinks.gameRoom">
+      <span class="link__item first">
+        Game
+      </span>
+      <span class="link__item">
+        room
+      </span>
+    </a>
+      <a class="leader-board__link" [routerLink]="[routerLinks.gameRoom, routerLinks.leaderBoard]">
+        <span class="link__item first">
+          Leader
+        </span>
+        <span class="link__item">
+          board
+        </span>
+      </a>
+  </div>
+
+  <div *ngIf="!(isLoggedIn$ | async); else settingMenu" class="sign-menu__wrapper">
+    <a [routerLink]="[routerLinks.authorization, routerLinks.signIn]" class="sign-menu__link">Sign In</a>
+    <span> / </span>
+    <a [routerLink]="[routerLinks.authorization, routerLinks.signUp]" class="sign-menu__link">Sign Up</a>
+  </div>
+
+  <ng-template #settingMenu>
+    <div class="setting-menu__wrapper">
+      <a class="sign-menu__link setting-menu">
+        <img src="../../../../assets/img/GearSix.svg" alt="setting-menu">
+      </a>
+    </div>
+  </ng-template>
+</nav>

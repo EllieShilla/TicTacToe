@@ -1,0 +1,12 @@
+<app-dialog-window>
+  <div
+    confirm
+    class="info modal-alert col"
+    [ngStyle]="{'background-image': data.type === 'SUCCESS' ? onSuccessIcon : onErrorIcon}">
+    <div class="wrapper">
+      <h2 class="title">{{data.content}}</h2>
+      <p class="message">{{data.description }}</p>
+    </div>
+    <button class="btn-close" mat-button type="button" (click)="dialogRef.close()"></button>
+  </div>
+</app-dialog-window>

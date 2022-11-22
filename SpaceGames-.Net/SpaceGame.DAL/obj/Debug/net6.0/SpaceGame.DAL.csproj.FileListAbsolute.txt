@@ -1,0 +1,12 @@
+C:\Users\38098\Downloads\Telegram Desktop\Новая папка\SpaceGame.DAL\bin\Debug\net6.0\SpaceGame.DAL.deps.json
+C:\Users\38098\Downloads\Telegram Desktop\Новая папка\SpaceGame.DAL\bin\Debug\net6.0\SpaceGame.DAL.dll
+C:\Users\38098\Downloads\Telegram Desktop\Новая папка\SpaceGame.DAL\bin\Debug\net6.0\SpaceGame.DAL.pdb
+C:\Users\38098\Downloads\Telegram Desktop\Новая папка\SpaceGame.DAL\obj\Debug\net6.0\SpaceGame.DAL.csproj.AssemblyReference.cache
+C:\Users\38098\Downloads\Telegram Desktop\Новая папка\SpaceGame.DAL\obj\Debug\net6.0\SpaceGame.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\38098\Downloads\Telegram Desktop\Новая папка\SpaceGame.DAL\obj\Debug\net6.0\SpaceGame.DAL.AssemblyInfoInputs.cache
+C:\Users\38098\Downloads\Telegram Desktop\Новая папка\SpaceGame.DAL\obj\Debug\net6.0\SpaceGame.DAL.AssemblyInfo.cs
+C:\Users\38098\Downloads\Telegram Desktop\Новая папка\SpaceGame.DAL\obj\Debug\net6.0\SpaceGame.DAL.csproj.CoreCompileInputs.cache
+C:\Users\38098\Downloads\Telegram Desktop\Новая папка\SpaceGame.DAL\obj\Debug\net6.0\SpaceGame.DAL.dll
+C:\Users\38098\Downloads\Telegram Desktop\Новая папка\SpaceGame.DAL\obj\Debug\net6.0\refint\SpaceGame.DAL.dll
+C:\Users\38098\Downloads\Telegram Desktop\Новая папка\SpaceGame.DAL\obj\Debug\net6.0\SpaceGame.DAL.pdb
+C:\Users\38098\Downloads\Telegram Desktop\Новая папка\SpaceGame.DAL\obj\Debug\net6.0\ref\SpaceGame.DAL.dll

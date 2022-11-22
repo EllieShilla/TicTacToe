@@ -1,0 +1,38 @@
+@import "../../../../assets/styles/variables.scss";
+
+.profile{
+    height: 4.625rem;
+
+    figure{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        box-shadow: 0 2px 1px $cell-border;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .profile-user{
+        justify-content: space-between;
+
+        .nick_name,
+        .user_score{
+            font-size: .875rem;
+        }
+
+        .rating{
+            align-items: center;
+
+            &:before{
+                content: url('../../../../assets/img/medal.svg');
+                margin-left: -.2rem;
+            }
+
+            .user_rating{
+                font-size: .625rem;
+            }
+        }
+    }
+}

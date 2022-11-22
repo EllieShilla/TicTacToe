@@ -1,0 +1,14 @@
+@import "src/assets/styles/variables";
+
+.page__wrapper {
+  background-color: $yellow-gray-color;
+  background-image: url('../assets/img/background-img-tic-tac-toe-left.svg'), url('../assets/img/background-img-tic-tac-toe-right.svg');
+  background-position: left, right;
+  background-repeat: repeat-y, repeat-y;
+}
+
+@media (max-width: 709px) {
+  .page__wrapper{
+    background-image: none;
+  }
+}

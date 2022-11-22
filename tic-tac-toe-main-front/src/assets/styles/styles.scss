@@ -1,0 +1,148 @@
+@import "variables";
+@import "fonts";
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  color: $primary-color;
+  box-sizing: border-box;
+  font-family: 'Nunito';
+}
+
+.page__wrapper {
+  width: 100%;
+}
+
+.container {
+  max-width: 708px;
+  margin: 0 auto;
+}
+
+.container-settings {
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: $input-background-color;
+  width: 10.188rem;
+  border-radius: 4px;
+  padding: .5rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.link {
+  border-radius: 4px;
+  outline: none;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-link {
+  color: $white-color;
+  background-color: $primary-color;
+  border: none;
+  border-bottom: 3px solid #08091A;
+}
+
+.secondary-link {
+  background-color: $secondary-white-color;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  border-bottom: 2px solid $primary-color;
+  text-align: center;
+}
+
+.page__title {
+  margin-bottom: 32px;
+  font-weight: 800;
+}
+
+.rules__item,
+.description__item {
+  font-size: 14px;
+  font-weight: 700;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.fixed-btn {
+  position: fixed;
+  left: calc(50% + 355px);
+  top: calc(50% + 158px);
+}
+
+
+@media (max-width: 709px) {
+  .container{
+    max-width: 343px;
+  }
+}
+
+.modal-alert{
+  position: relative;
+  width: 376px;
+  height: 167px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $yellow-gray-color;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  padding: 24px 8px;
+  z-index: 100;
+
+  @media (max-width:709px) {
+    width: 340px;
+  }
+}
+
+.btn-close{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  right: -35px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('../img/x-cross.svg');
+  border: none;
+}
+
+body .mat-dialog-container {
+  padding: 0;
+}
+
+.btn-close.mat-button {
+  position: absolute;
+  top: 0px;
+  right: -35px;
+  padding: 5px;
+  line-height: 14px;
+  min-width: auto;
+
+  @media (max-width:709px) {
+    top: -35px;
+    right: 0;
+  }
+}
+
+.green {
+  color: $validation-green;
+}
+
+.red,
+.red.password-input.form__item,
+.name-label.red.form__item,
+.email-input.red.form__item,
+.accept-checkbox.red,
+.code-label.red.form__item {
+  color: $validation-red;
+}
+
+.password.red-border.form__input,
+.name.red-border.form__input,
+.email.red-border.form__input {
+  border-color: $validation-red;
+}

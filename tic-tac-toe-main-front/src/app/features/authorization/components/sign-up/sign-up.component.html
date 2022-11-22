@@ -1,0 +1,40 @@
+<div class="sig-up__wrapper">
+
+  <ng-container *ngIf="passwordSubscription$ | async"></ng-container>
+
+  <form [formGroup]="signUpForm" class="registration-form">
+    <label class="form__item name-label" >
+      Nickname (will shown for other users)
+      <input [formControl]="nickName" class="form__input name" type="text" placeholder="Enter your nickname" />
+    </label>
+    <app-email-input [formControl]="email"></app-email-input>
+    <app-password-input
+      [formControl]="password"
+      [title]="passwordTitle"
+      [isPasswordValid]="isPasswordValid"
+      [isPasswordTouched]="isPasswordTouched"
+    ></app-password-input>
+    <app-password-validation
+      [isPasswordTouched]="isPasswordTouched"
+      [isPasswordRulesValid]="isPasswordRulesValid"
+    ></app-password-validation>
+
+    <div class="condition-checkbox__wrapper">
+      <label class="condition-checkbox__label">
+        <input [formControl]="checkbox" class="condition-checkbox" type="checkbox" />
+        <span class="accept-checkbox" [ngClass]="{'red': isFormValid}">
+      I accept the
+    </span>
+      </label>
+      <a class="condition__link"  target="_blank">Terms & Conditions</a>
+    </div>
+    <div class="signIn__wrapper">
+      <button class="link primary-link signUp__button" type="submit" (click)="signUp()">Sign Up</button>
+    </div>
+  </form>
+
+  <div class="additional-question__wrapper">
+    <span class="additional-question">Already have an account?</span>
+    <a class="additional-question__link">Sign In</a>
+  </div>
+</div>

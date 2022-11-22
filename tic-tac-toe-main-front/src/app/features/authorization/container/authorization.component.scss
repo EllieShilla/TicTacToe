@@ -1,0 +1,58 @@
+@import "../../../../assets/styles/variables";
+
+.authorization__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 348px;
+}
+
+.registration-form,
+.form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form {
+  align-items: center;
+}
+
+.form {
+  &__item {
+    width: 100%;
+    margin-bottom: 23px;
+    font-size: 12px;
+    font-weight: 700;
+    color: $primary-color;
+  }
+
+  &__input {
+    padding: 9px 12px;
+    background-color: $input-background-color;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+
+    &::placeholder {
+      color: #9293A3;
+    }
+  }
+}
+
+.password-input.form__item {
+  position: relative;
+  margin: 0;
+}
+
+.signIn__wrapper {
+  width: 100%;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.password-input.form__item,
+.email-input.form__item {
+  width: 348px;
+}

@@ -1,0 +1,21 @@
+@import "../../../../../assets/styles/variables";
+
+.nav {
+  &__list {
+    display: flex;
+    width: 100%;
+    padding-bottom: 31px;
+  }
+
+  &__item {
+    width: 50%;
+    color: $light-grey-color;
+    border-bottom: 1px solid $light-grey-color;
+    text-align: center;
+  }
+}
+
+.active {
+  color: $primary-color;
+  border-bottom: 2px solid $primary-color;
+}

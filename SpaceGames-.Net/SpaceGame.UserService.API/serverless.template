@@ -1,0 +1,74 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Transform": "AWS::Serverless-2016-10-31",
+  "Description": "An AWS Serverless Application that uses the ASP.NET Core framework running in Amazon Lambda.",
+  "Parameters": {},
+  "Conditions": {},
+  "Resources": {
+      "AspNetCoreApi": {
+      "Type": "AWS::Serverless::Api",
+      "Properties": {
+        "StageName": "Dev",
+        "BinaryMediaTypes": [
+          "*~1*"
+        ]
+      }
+    },
+    "AspNetCoreFunction": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "SpaceGame.UserService.API::SpaceGame.UserService.API.LambdaEntryPoint::FunctionHandlerAsync",
+        "Runtime": "dotnet6",
+        "CodeUri": "",
+        "MemorySize": 256,
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [
+          "AWSLambda_FullAccess"
+        ],
+        "Environment": {
+          "Variables": {
+            "BucketName": "bucketavatar",
+            "UserPoolClientId": "7erpo0ic6pmmeia918fd1gm741",
+            "UserPoolClientSecret": "g269t65f00r00b7cg2rfd5i4j957cesngndce6f0hbckaub4776",
+            "UserPoolId": "eu-west-3_oHJgFj6Vc",
+            "Region": "eu-west-3",
+            "ASPNETCORE_ENVIRONMENT": "Development"
+          }
+        },
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/{proxy+}",
+              "Method": "ANY",
+              "RestApiId": {
+                "Ref": "AspNetCoreApi"
+              }
+            }
+          },
+          "RootResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/",
+              "Method": "ANY",
+              "RestApiId": {
+                "Ref": "AspNetCoreApi"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Outputs": {
+    "ApiURL": {
+      "Description": "API endpoint URL for Prod environment",
+      "Value": {
+        "Fn::Sub": "https://${AspNetCoreApi}.execute-api.${AWS::Region}.amazonaws.com/Dev/"
+      }
+    }
+  }
+}
+
+
